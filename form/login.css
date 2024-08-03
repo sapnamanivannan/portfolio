@@ -32,10 +32,7 @@ input {
     border-radius: 5px;
     border: 1px solid grey;
 }
-.forgetpassword {
-    color:rgb(232, 97, 147);
-    text-decoration: none;
-}
+/*   */
 button {
     display: block;
     background-image: linear-gradient(rgb(199, 11, 199),rgb(232, 97, 147));
