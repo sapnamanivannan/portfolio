@@ -6,8 +6,8 @@
 body {
     background-color: black;
 }
-form {
-    width: 280px;
+.parent {
+    max-width: 280px;
     background-color: rgba(240, 255, 255, 0.15);
     margin: 100px auto;
     border-radius: 5px;
@@ -16,7 +16,7 @@ form {
     color: white;
     position: relative;
 }
-.logo img {
+.logo {
     border-radius:50% ;
     width: 130px;
     /* margin-top: 20px; */
@@ -67,7 +67,7 @@ h2 {
 
 .circle.blue {
     background-color: blue;
-    right: -60px;
+    left: -60px;
     top: -60px;
     background-image: linear-gradient(180deg, #3314df, #1fa0ea);
 }
@@ -75,7 +75,7 @@ h2 {
     /* background-color: #ff3737; */
     /* background-image: linear-gradient(0deg, green, red); */
     background-image: linear-gradient(90deg, #f15632, #ea9a1f);
-    left: -25px;
+    right: -25px;
     bottom: -56px;
 }
 
