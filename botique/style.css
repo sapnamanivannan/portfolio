@@ -26,9 +26,10 @@ img {
 header {
     /* background-color: palevioletred; */
     min-height: 100vh;
-    background-image: url(final.png);
-    background-size: cover;
+    background-image: url(botique.jpg);
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .header-content {
     width: 95%;
