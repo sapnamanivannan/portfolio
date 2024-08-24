@@ -108,6 +108,12 @@ header nav a:last-child {
 .projects .project .thumbnail.profile {
     background-image: url('profile-card/thumbnail.png');
 }
+.projects .project .thumbnail.landing-page {
+    background-image: url('landing-page/thumbnail.png');
+}
+.projects .project .thumbnail.news-website {
+    background-image: url('news-website/thumbnail.png');
+}
 .projects .project .info {
     display: flex;
     border-top: 1px solid grey;
