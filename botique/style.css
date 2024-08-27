@@ -27,8 +27,8 @@ header {
     /* background-color: palevioletred; */
     min-height: 100vh;
     background-image: url(botique.jpg);
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    /* background-position: center; */
     background-repeat: no-repeat;
 }
 .header-content {

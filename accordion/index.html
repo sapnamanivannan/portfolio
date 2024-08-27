@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="heading">Accordion</h1>
+        <!-- horizontal rule -->
+        <hr>
+
+        <div class="wrapper">
+            <div class="box 1">
+                <h2>Heading 1 <img class="plus" src="img/plus.png"><img class="minus" src="img/minus.png">
+                </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, accusamus fugiat repellendus
+                    laborum
+                    dolorum harum iusto iste, maxime eligendi voluptatum qui similique dicta minima ipsam quisquam
+                    pariatur perferendis, laudantium illo?</p>
+            </div>
+            <div class="box 2">
+                <h2>Heading 2 <img class="plus" src="img/plus.png"><img class="minus" src="img/minus.png"></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, accusamus fugiat repellendus laborum
+                    dolorum harum iusto iste, maxime eligendi voluptatum qui similique dicta minima ipsam quisquam
+                    pariatur perferendis, laudantium illo?</p>
+            </div>
+            <div class="box 3">
+                <h2>Heading 3 <img class="plus" src="img/plus.png"><img class="minus" src="img/minus.png"></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, accusamus fugiat repellendus laborum
+                    dolorum harum iusto iste, maxime eligendi voluptatum qui similique dicta minima ipsam quisquam
+                    pariatur perferendis, laudantium illo?</p>
+            </div>
+        </div>
+        <script>
+            // let headingEl = document.getElementById('heading')
+            // let boxes = document.getElementById
+
+            // let stdsArr = ["Sapna", "Ruchitha", "Sama", "Shalini"];
+            // console.log(stdsArr[3])
+
+            let boxes = document.getElementsByClassName('box');
+            //   = [box1, box2, box3]
+
+            // console.log(headingEl)
+
+            console.log(boxes) // == [box1, box2, box3]
+            console.log(boxes.length) // 3
+
+            for (let i = 0; i < boxes.length; i++) {
+                let headingEl = boxes[i].querySelector('h2')
+                let paraEl = boxes[i].querySelector('p')
+                let plusImgEl = boxes[i].querySelector('.plus')
+                let minusImgEl = boxes[i].querySelector('.minus')
+
+                headingEl.addEventListener('click', function () {
+                    if (boxes[i].classList.contains('active')) {
+                        boxes[i].classList.remove('active');
+                    } else {
+                        boxes[i].classList.add('active');
+                    }
+                    // paraEl.style.display = 'block'
+                    // plusImgEl.style.display = 'none'
+                    // minusImgEl.style.display = 'block'
+                })
+                // console.log(boxes[i])
+                // console.log(headingEl)
+            }
+        </script>
+</body>
+</html>

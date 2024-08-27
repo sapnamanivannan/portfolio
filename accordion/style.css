@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    /* background-color: yellow; */
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.box {
+    border: 1px solid grey;
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+.box h2,
+.box p {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.box h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.box h2:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.box h2:active {
+    background-color: white;
+}
+
+.box h2 img {
+    width: 16px;
+}
+
+.box h2 img.minus {
+    display: none;
+}
+
+.box p {
+    display: none;
+}
+
+.box.active p,
+.box.active .minus {
+    display: block;
+}
+
+.box.active .plus {
+    display: none;
+}
