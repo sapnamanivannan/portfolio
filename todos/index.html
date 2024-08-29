@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Todos</h1>
+    <hr>
+
+    <div class="wrapper">
+        <div class="input-area">
+            <input id="inputText" type="text">
+            <button id="addBtn">Add</button>
+        </div>
+        <ul id="todos" class="todos"></ul>
+    </div>
+    <script>
+        let inputTextEl = document.getElementById('inputText')
+        let addBtnEl = document.getElementById('addBtn')
+        let todosEl = document.getElementById('todos')
+
+        addBtnEl.addEventListener('click',function () {
+            let newEl = document.createElement('li')
+            let inputVal = inputTextEl.value;
+
+            newEl.innerHTML = '<input type ="checkbox"><span>' + inputVal + '</span>';
+            todosEl.appendChild(newEl);
+            inputTextEl.value = ''
+        })
+    </script>
+</body>
+</html>
