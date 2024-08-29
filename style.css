@@ -138,6 +138,9 @@ header nav a:last-child {
 .projects .project .thumbnail.tables {
     background-image: url('tables/thumbnail.png');
 }
+.projects .project .thumbnail.games {
+    background-image: url('games/thumbnail.png');
+}
 .projects .project .info {
     display: flex;
     border-top: 1px solid grey;
