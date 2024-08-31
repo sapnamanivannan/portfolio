@@ -126,6 +126,9 @@ header nav a:last-child {
 .projects .project .thumbnail.event-form {
     background-image: url('event-form/thumbnail.png');
 }
+.projects .project .thumbnail.survey-form {
+    background-image: url('survey-form/thumbnail.png');
+}
 .projects .project .thumbnail.gmail-project {
     background-image: url('gmail-project/thumbnail.png');
 }
@@ -140,6 +143,9 @@ header nav a:last-child {
 }
 .projects .project .thumbnail.games {
     background-image: url('games/thumbnail.png');
+}
+.projects .project .thumbnail.calculator {
+    background-image: url('calculator/thumbnail.png');
 }
 .projects .project .info {
     display: flex;
